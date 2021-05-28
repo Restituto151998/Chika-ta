@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+    integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <title>Chika-na-dis</title>
+</head>
+
+<body style="background-image: url('/img/kitty.jpg');background-repeat: no-repeat; background-size: cover;">
+  <div class="container  mt-3 mb-3">
+    <div class="row">
+      <div class="col-sm-5">
+        <div class="card">
+          <div class="card-header">
+            <h4 style="color: palevioletred;"> <img src="/img/hello.png" alt="" style="width: 80px; ">Active Kitties
+            </h4>
+          </div>
+          <div class="card-body ">
+            <main class="chat-main">
+              <div class="chat-sidebar" style="width: 400%;">
+                <h2 id="room-name" hidden></h2>
+
+                <div>
+
+                  <span id="users">
+
+                  </span>
+                </div>
+              </div>
+
+
+
+            </main>
+          </div>
+
+        </div>
+
+        <div>
+
+          <img src="/img/hk.png" alt="" srcset="" width="500px">
+        </div>
+      </div>
+
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-header">
+            <img class="float-left" src="/img/hello.png" alt="" style="width: 80px; ">
+            <h4 class="float-left mt-4" style="font-size: 25px; color: palevioletred;"> Chika-na-dis </h4> <a
+              href="index.html" class="btn float-right text-white mt-4" id="leave-btn"
+              style="background-color: palevioletred; font-size: 20px;">LogOut</a>
+          </div>
+          <div class="card-body ">
+
+            <div class="chat-form-container" style="height: 500px;">
+              <div class="chat-messages" style="height: 450px;">
+
+
+                <div class="messages"></div>
+                <b>
+                  <div id="typing" style="opacity: 0.5;"></div>
+                </b>
+              </div>
+
+
+              <form id="chat-form" class="pb-5">
+
+
+
+                <input id="msg" type="text" style="background-color: pink;" placeholder="Type a Message"
+                autocomplete="off" />
+
+                <div class="btn-group dropup">
+                  <button type="button" class="btn dropdown-toggle" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false" style="background-color: pink;width: 50px;
+                    border-top-right-radius: 15px;border-bottom-right-radius: 15px; border-top-left-radius: 0;border-bottom-left-radius: 0;">
+                    😀
+                  </button>
+                  <div class="dropdown-menu" style="font-size: 20px;height:200px;overflow-y: scroll;">
+                    <a id="1" href="#">🤣</a>
+                    <a id="2" href="#">😊</a>
+                    <a id="3" href="#">😇</a>
+                    <a id="4" href="#">🙂</a>
+                    <a id="5" href="#">🙃</a>
+                    <a id="6" href="#">😉</a>
+                    <a id="7" href="#">😌</a>
+                    <a id="8" href="#">😍</a>
+                    <a id="9" href="#">🥰</a>
+                    <a id="10" href="#">😘</a>
+                    <a id="11" href="#">😗</a>
+                    <a id="12" href="#">😙</a>
+                    <a id="13" href="#">😚</a>
+                    <a id="14" href="#">😋</a>
+                    <a id="15" href="#">😛</a>
+                    <a id="16" href="#">😄</a>
+                    <a id="17" href="#">😁</a>
+                    <a id="18" href="#">😆</a>
+                    <a id="19" href="#">😅</a>
+                    <a id="20" href="#">😂</a>
+                    <a id="21" href="#">❤️</a>
+                    <a id="22" href="#">💖</a>
+                    <a id="23" href="#">💞</a>
+                    <a id="24" href="#">❣️</a>
+                    <a id="25" href="#">🤭</a>
+                    <a id="26" href="#">🤫</a>
+                    <a id="27" href="#">🤔</a>
+                    <a id="28" href="#">🤗</a>
+                    <a id="29" href="#">😄</a>
+                    <a id="30" href="#">😄</a>
+                    
+
+                  </div>
+                </div>
+            
+                <button class="btn-plane"><i class="fas fa-paper-plane text-dark"></i> </button>
+              </form>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.9.2/qs.min.js"
+    integrity="sha256-TDxXjkAUay70ae/QJBEpGKkpVslXaHHayklIVglFRT4=" crossorigin="anonymous"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script src="js/main.js"></script>
+
+
+
+
+</body>
+
+</html>
